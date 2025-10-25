@@ -1,0 +1,421 @@
+{
+	"info": {
+		"_postman_id": "b15d19e0-0504-4ce8-b807-faeebd31a014",
+		"name": "Inventory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10940582",
+		"_collection_link": "https://test33-7758.postman.co/workspace/Inventory~a4d1f575-36e5-47f1-81ed-51d30a929bc5/collection/10940582-b15d19e0-0504-4ce8-b807-faeebd31a014?action=share&source=collection_link&creator=10940582"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/items?page=0&size=10",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/items?page=0&size=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"items"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8080/api/items?page=0&size=10'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/items/8",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/items/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"items",
+						"8"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8080/api/items/8'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/items",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"name\": \"eraser\",\r\n        \"price\": 2\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"items"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8080/api/items' \\\r\n--header 'Content-Type: application/json' \\\r\n--data '{\r\n    \"data\": {\r\n        \"name\": \"eraser\",\r\n        \"price\": 2\r\n    }\r\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/items/8",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"name\": \"eraser\",\r\n        \"price\": 2\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/items/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"items",
+						"8"
+					]
+				},
+				"description": "Generated from cURL: curl --location --request PUT 'http://localhost:8080/api/items/8' \\\r\n--header 'Content-Type: application/json' \\\r\n--data '{\r\n    \"data\": {\r\n        \"name\": \"eraser\",\r\n        \"price\": 2\r\n    }\r\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/items/8",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/items/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"items",
+						"8"
+					]
+				},
+				"description": "Generated from cURL: curl --location --request DELETE 'http://localhost:8080/api/items/8'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/inventory?page=0&size=10",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/inventory?page=0&size=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"inventory"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8080/api/inventory?page=0&size=10'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/inventory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"itemId\": 2,\r\n        \"qty\": 5,\r\n        \"type\": \"T\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/inventory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"inventory"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8080/api/inventory/1'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/inventory/10",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"itemId\": 2,\r\n        \"qty\": 5,\r\n        \"type\": \"t\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/inventory/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"inventory",
+						"10"
+					]
+				},
+				"description": "Generated from cURL: curl --location --request PUT 'http://localhost:8080/api/inventory/10' \\\r\n--header 'Content-Type: application/json' \\\r\n--data '{\r\n    \"data\": {\r\n        \"itemId\": 2,\r\n        \"qty\": 6,\r\n        \"type\": \"W\"\r\n    }\r\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/inventory/10",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/inventory/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"inventory",
+						"10"
+					]
+				},
+				"description": "Generated from cURL: curl --location --request DELETE 'http://localhost:8080/api/inventory/10'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/order?page=0&size=10",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/order?page=0&size=100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"order"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/order/o11",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/order/o11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"order",
+						"o11"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8080/api/order/o11'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"itemId\": 2,\r\n        \"qty\": 5\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"order"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8080/api/order' \\\r\n--header 'Content-Type: application/json' \\\r\n--data '{\r\n    \"data\": {\r\n        \"itemId\": 2,\r\n        \"qty\": 5\r\n    }\r\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/order/O11",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"itemId\": 2,\r\n        \"qty\": 10\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/order/O11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"order",
+						"O11"
+					]
+				},
+				"description": "Generated from cURL: curl --location --request PUT 'http://localhost:8080/api/order/O11' \\\r\n--header 'Content-Type: application/json' \\\r\n--data '{\r\n    \"data\": {\r\n        \"itemId\": 2,\r\n        \"qty\": 10\r\n    }\r\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/order/O11",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/order/O11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"order",
+						"O11"
+					]
+				},
+				"description": "Generated from cURL: curl --location --request DELETE 'http://localhost:8080/api/order/O11'"
+			},
+			"response": []
+		}
+	]
+}
